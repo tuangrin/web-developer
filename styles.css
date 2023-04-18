@@ -1,0 +1,945 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.nav-box {
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 1.2rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  margin: 0 1.5rem;
+}
+
+#menu{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.white-nav{
+  color: white;
+}
+
+.black-nav{
+  color: black;
+}
+
+.black-nav a{
+  color: black;
+}
+
+.black-bg-nav{
+  background-color: black;
+  opacity: 0.3;
+}
+
+#menu:hover {
+  color: rgb(255, 182, 72);
+}
+
+/* -----Hero----- */
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: slide 30s infinite;
+}
+
+.load {
+  animation: slide 1s;
+}
+
+.box-hero {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-hero {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 5px;
+  text-align: center;
+  z-index: 2;
+}
+
+.text-hero h1 {
+  font-size: 4rem;
+  letter-spacing: 0.8rem;
+}
+
+.text-hero p {
+  font-size: 1.5rem;
+}
+
+.text-hero button {
+  width: 130px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.read-more {
+  background-color: red;
+  border: 3px solid white;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.learn-more {
+  background-color: white;
+  color: black;
+}
+
+@keyframes slide {
+  20% {
+    background-image: url('./image/image1.jpg');
+  }
+
+  20.01% {
+    background-image: url('./image/image2.jpg');
+  }
+
+  40% {
+    background-image: url('./image/image2.jpg');
+  }
+
+  40.01% {
+    background-image: url('./image/image3.jpg');
+  }
+
+  60% {
+    background-image: url('./image/image3.jpg');
+  }
+
+  60.01% {
+    background-image: url('./image/image4.jpg');
+  }
+
+  80% {
+    background-image: url('./image/image4.jpg');
+  }
+
+  80.01% {
+    background-image: url('./image/image5.jpg');
+  }
+
+  100% {
+    background-image: url('./image/image5.jpg');
+  }
+}
+
+/* -------Service-------- */
+#our-service {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  gap: 4rem;
+}
+
+.detail-service {
+  margin-left: calc(100% / 11);
+}
+
+#font-service p {
+  font-size: 1.5rem;
+}
+
+.text-service {
+  margin-top: 0;
+  padding-top: 2px;
+}
+
+.text-service p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.text-service span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+/* -------Count-------- */
+.count {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('./image/count-bg.jpg');
+}
+
+.count-black {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0rem 10rem;
+}
+
+.counter-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.counter-box p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.count-number {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* -------Great Work-------- */
+.great-work {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  overflow-y: hidden;
+  padding: 6rem 0rem 0rem 0rem;
+  margin: 0;
+}
+
+.head-gw {
+  margin: 10px 0px;
+}
+
+.head-gw p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.head-gw span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(255, 196, 0);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content .tab-list {
+  height: 60px;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .tab-list p {
+  font-size: 1rem;
+}
+
+.content .tab-list > div {
+  margin-right: 1rem;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  z-index: 2;
+}
+
+.content .tab-list > div.active {
+  color: #e4b211;
+}
+
+img {
+  width: 650px;
+  height: 350px;
+  gap: 0;
+}
+.grid-container {
+  display: grid;
+  width: 100%;
+  gap: 0;
+  grid-template-columns: auto auto auto auto;
+}
+
+.content .content-body {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+.content .content-body > div {
+  position: absolute;
+  top: -200%;
+  opacity: 0;
+  margin-top: 5px;
+  transform: scale(0.9);
+  transition: opacity 400ms ease-in-out 0ms, transform 400ms ease-in-out 0ms;
+}
+
+.content .content-body > div.active {
+  top: 0px;
+  opacity: 1;
+  transform: scale(1);
+  margin-top: 0px;
+}
+
+.all-content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto auto;
+}
+
+/* -------Footer-------- */
+footer {
+  background-color: rgb(248, 248, 250);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+/* ---------------------------------Responsive----------------------------- */
+
+@media only screen and (max-width: 480px) {
+  nav {
+    right: 50%;
+  }
+
+  .logo {
+    margin-left: 1rem;
+    font-size: 2.2rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  /* -----Hero----- */
+  .text-hero{
+    width: 100%;
+  }
+  .text-hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding: auto;
+  }
+
+  .text-hero p {
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+  }
+
+  .text-hero button {
+    width: 150px;
+    height: 60px;
+    border-radius: 4px;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  .learn-more {
+    font-weight: 600;
+  }
+
+  /* -------Service-------- */
+  #our-service {
+    height: 140vh;
+  }
+
+  .detail-service {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  #font-service h4 {
+    font-size: 1rem;
+  }
+
+  #font-service p {
+    font-size: 0.8rem;
+  }
+
+  .text-service {
+    margin-top: 0;
+    padding-top: 2px;
+  }
+
+  .text-service p {
+    font-size: 1.3rem;
+  }
+
+  .text-service span {
+    font-size: 1.3rem;
+  }
+  /* -------Count-------- */
+  .count {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .count-black{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .counter-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .counter-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .count-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  /* -------Great Work-------- */
+  .great-work {
+    height: 138rem;
+    width: 100%;
+  }
+
+  .head-gw {
+    margin: 0px 0px;
+  }
+
+  .head-gw p {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .head-gw span {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .content .tab-list {
+    height: 60px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .tab-list p {
+    font-size: 0.8rem;
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+  }
+  .grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav {
+    right: 60%;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  /* -----Hero----- */
+  .text-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .text-hero p {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+  }
+
+  .text-hero button {
+    width: 150px;
+    height: 60px;
+    border-radius: 4px;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  .learn-more {
+    font-weight: 600;
+  }
+
+  /* -------Service-------- */
+  #our-service {
+    height: 140vh;
+  }
+
+  .detail-service {
+    padding-left: 12rem;
+    margin: 0 auto;
+  }
+
+  #font-service h4 {
+    font-size: 1.3rem;
+  }
+
+  #font-service p {
+    font-size: 1rem;
+  }
+
+  .text-service {
+    margin-top: 0;
+    padding-top: 2px;
+  }
+
+  .text-service p {
+    font-size: 1.3rem;
+  }
+
+  .text-service span {
+    font-size: 1.3rem;
+  }
+  /* -------Count-------- */
+  .count {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .count-black{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .counter-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .counter-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .count-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  /* -------Great Work-------- */
+  .great-work {
+    height: 237rem;
+    width: 100%;
+  }
+
+  .head-gw {
+    margin: 0px 0px;
+  }
+
+  .head-gw p {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .head-gw span {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .content .tab-list {
+    height: 60px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .tab-list p {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 100%;
+    height: 450px;
+  }
+  .grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    right: 60%;
+  }
+
+  .logo {
+    margin-top: 10px;
+    margin-left: 1rem;
+    font-size: 2.4rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  /* -----Hero----- */
+  .text-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding: auto;
+  }
+
+  .text-hero p {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+  }
+
+  .text-hero button {
+    width: 150px;
+    height: 60px;
+    border-radius: 4px;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  .learn-more {
+    font-weight: 600;
+  }
+
+  /* -------Service-------- */
+  #our-service {
+    height: 180vh;
+  }
+
+  .detail-service {
+    margin-left: 200px;
+  }
+
+  #font-service h4 {
+    font-size: 1.8rem;
+  }
+
+  #font-service p {
+    font-size: 1.5rem;
+  }
+
+  .text-service {
+    margin-top: 0;
+    padding-top: 2px;
+  }
+
+  .text-service p {
+    font-size: 2rem;
+  }
+
+  .text-service span {
+    font-size: 2rem;
+  }
+  /* -------Count-------- */
+  .count {
+    height: 50vh;
+    gap: 1rem;
+  }
+
+  .count-black{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .counter-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .counter-box p {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .count-number {
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  /* -------Great Work-------- */
+  .great-work {
+    height: 76rem;
+    width: 100%;
+  }
+
+  .head-gw {
+    margin: 0px 0px;
+  }
+
+  .head-gw p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .head-gw span {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .content .tab-list {
+    height: 60px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .tab-list p {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .img-gw {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    gap: 0;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    gap: 0;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  /* -----Hero----- */
+  .text-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: auto;
+  }
+
+  .text-hero p {
+    font-size: 2rem;
+  }
+
+  .text-hero button {
+    width: 140px;
+    height: 50px;
+    border-radius: 4px;
+  }
+
+  .read-more {
+    font-weight: 600;
+  }
+
+  .learn-more {
+    font-weight: 600;
+  }
+
+  /* -------Service-------- */
+  #our-service {
+    height: 50rem;
+  }
+
+  .detail-service {
+    margin-left: 170px;
+  }
+
+  #font-service h4 {
+    font-size: 1.7rem;
+  }
+
+  #font-service p {
+    font-size: 1.2rem;
+  }
+
+  .text-service p {
+    font-size: 2.5rem;
+  }
+
+  .text-service span {
+    font-size: 2.5rem;
+  }
+  /* -------Count-------- */
+  .count {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .counter-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .counter-box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .count-number {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  /* -------Great Work-------- */
+  .great-work {
+    height: 88.7rem;
+    width: 100%;
+  }
+
+  .head-gw {
+    margin: 0px 0px;
+  }
+
+  .head-gw p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .head-gw span {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .content .tab-list {
+    height: 60px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .tab-list p {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .img-gw {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    gap: 0;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    gap: 0;
+  }
+
+  footer {
+    font-size: 1rem;
+    height: 20vh;
+  }
+}
